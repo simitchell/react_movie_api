@@ -46,7 +46,7 @@ export const OuterContainer = styled.div`
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        max-width: 1400px;
         margin: auto;
         padding: auto;
         justify-content: space-evenly;
