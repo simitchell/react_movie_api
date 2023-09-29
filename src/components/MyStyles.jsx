@@ -1,8 +1,18 @@
 import styled from 'styled-components';
 
+export const outerMostDiv = styled.div`
+`
+
 export const OuterContainer = styled.div`
     display: flex;
     flex-direction: column;
+    width: 100%;
+    margin: auto;
+    
+    .topDisplay {
+        display: flex;
+        margin: auto;
+    }
     
     .topContainer {
         display: flex;
@@ -32,6 +42,16 @@ export const OuterContainer = styled.div`
         box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     }
 
+    .cardDisplay {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        padding: auto;
+        justify-content: space-evenly;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
@@ -40,6 +60,7 @@ export const OuterContainer = styled.div`
         background-color: #e2e2e2;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 25px;
+        margin: 1rem;
         padding: 1rem;
         
         h2 {
