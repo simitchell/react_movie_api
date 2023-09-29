@@ -4,23 +4,40 @@ export const OuterContainer = styled.div`
     display: flex;
     flex-direction: column;
     
-    form {
-        margin-bottom: 2rem;
+    .topContainer {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        width: 600px;
+
+        .inputSection {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
 
         input {
             font-size: 1.2rem;
         }
 
         button {
-            background-color: lightgrey;
+            background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+            margin-top: 1rem;
+            color: whitesmoke;
         }
     }
-    
+    }
+
+    .j5image {
+        max-width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    }
+
     .card {
         display: flex;
         flex-direction: column;
         max-width: 600px;
         border: none;
+        background-color: #e2e2e2;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 25px;
         padding: 1rem;

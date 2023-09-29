@@ -26,26 +26,30 @@ export const MyForm = () => {
 
     return (
         <OuterContainer>
-            <h2>Need Input!!</h2>
-            <form className="inputSection">
-                <input type="text" placeholder="Movie Title" value={info} onChange={(e) => handleChange(e)}></input>
-                <button type="submit" className="button is-primary" onClick={handleClick}>Ahhh... Input.</button>
-            </form>
+            <div className="topContainer">
+                <div className="imageContainer">
+                    <img src="src/images/J5Input2.jpeg" className="j5image" />
+                </div>
+                <form className="inputSection">
+                    <input type="text" placeholder="Movie Title" value={info} onChange={(e) => handleChange(e)}></input>
+                    <button type="submit" className="button" onClick={handleClick}>Ahhh... Input.</button>
+                </form>
+            </div>
             {movieData.map((movie, index) => {
                 console.log({ movie })
                 return (
                     <div key={index} className="card">
                         <h2>{movie.Title}</h2>
                         <div className="cardInfo">
-                            <div className="card-image">
+                            <div>
                                 <img src={movie.Poster} />
                             </div>
                             <div className="returnInfo">
-                                <span className="card-header"><strong>Title: </strong>{movie.Title}</span>
-                                <span className="card-content"><strong>Year Released: </strong>{movie.Year}</span>
-                                <span className="card-content"><strong>Awards: </strong>{movie.Awards}</span>
-                                <span className="card-content"><strong>Plot: </strong>{movie.Plot}</span>
-                                <span className="card-content"><strong>IMDb Rating: </strong>{movie.imdbRating}</span>
+                                <span><strong>Title: </strong>{movie.Title}</span>
+                                <span><strong>Year Released: </strong>{movie.Year}</span>
+                                <span><strong>Awards: </strong>{movie.Awards}</span>
+                                <span><strong>Plot: </strong>{movie.Plot}</span>
+                                <span><strong>IMDb Rating: </strong>{movie.imdbRating}</span>
                             </div>
                         </div>
                     </div>
